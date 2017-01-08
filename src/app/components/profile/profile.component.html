@@ -1,0 +1,56 @@
+<md-card>
+  <md-card-header class="cv-card">
+    <md-card-title>
+      <span class="name">Aurélien Lansmanne</span>
+    </md-card-title>
+    <md-card-subtitle>Software Engineer</md-card-subtitle>
+  </md-card-header>
+  <md-divider></md-divider>
+  <md-card-content layout="column">
+    <div layout="row">
+      <div hide-xs hide-sm flex="50" layout-padding>
+        <img class="portrait" src="assets/img/portrait.png">
+        <p>
+          Je suis passionné par l’informatique et les nouvelles technologies depuis mon enfance.
+        </p>
+        <p>
+          Mes langages de prédilection sont le JAVA et le Javascript, mais diverses expériences personnelles m’ont conduit à m’aventurer du côté du web responsive et des architectures micro-services. J’ai pu m’essayer à d’autres paradigmes de base de données,
+          et au développement fullstack. J’ai l’esprit d’équipe, je suis rigoureux et toujours prêt à aider et à apprendre. J’ai eu l’occasion d’endosser plusieurs rôles, du développement à la gestion de projet, afin de toujours mener à bien les tâches
+          qui m’étaient confiées.
+        </p>
+        <p>
+          Je dispose d’une bonne expérience du monde médical, et de la gestion d’une équipe de développement.
+        </p>
+      </div>
+      <div id="links" layout="column" layout-padding flex-lg="50" flex="100">
+        <span class="contact-row"><i class="fa fa-birthday-cake fa-lg" aria-hidden="true"></i>&nbsp;25/03/1987</span>
+        <span class="contact-row"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>&nbsp;aurelien.lansmanne@gmail.com</span>
+        <span class="contact-row"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>&nbsp;151, rue Joseph Wauters 7390 Quaregnon</span>
+        <span class="contact-row"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>&nbsp;(+32) 498231354</span>
+
+        <div layout-sm="row" layout-gt-sm="column" class="social-icons">
+          <span *ngFor='let socialLink of socialLinks' class="social-row">
+            <a hide-gt-sm md-mini-fab class="social-fab" color="accent" href="{{socialLink.url}}" mdTooltip="{{socialLink.name}}">
+              <i class="fa {{socialLink.icon}} fa-lg" aria-hidden="true"></i>
+            </a>
+            <a hide-sm hide-xs md-button class="social-row">
+              <i class="fa {{socialLink.icon}} fa-lg" aria-hidden="true"></i>&nbsp;{{socialLink.name}}
+            </a>
+          </span>
+        </div>
+
+        <div id="language-skills" layout-padding>
+          <div *ngFor='let skill of skills' class="language-skill">
+            <div>
+              <span><strong>{{skill.name}}</strong> : </span>
+              <span class="skill-comment">{{skill.comment}}</span>
+              <md-progress-bar mode="determinate" [value]="skill.percentage"></md-progress-bar>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </md-card-content>
+</md-card>

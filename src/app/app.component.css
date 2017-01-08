@@ -1,0 +1,15 @@
+span.md-divider {
+  border-top-color: rgba(0, 0, 0, .12);
+  display: block;
+  border-top-width: 1px;
+  border-top-style: solid;
+  margin: 0;
+}
+
+.bigger-avatar {
+  color: rgb(250, 250, 250);
+  background-color: rgba(0, 0, 0, 0.38);
+  height: 36px;
+  width: 36px;
+  font-size: 36px;
+}

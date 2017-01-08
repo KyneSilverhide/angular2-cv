@@ -1,0 +1,41 @@
+span.name {
+  font-size: 1.5em;
+}
+
+img.portrait {
+  width: 65%;
+  padding: 0;
+  margin: 0;
+  margin-left: 12.5%;
+  max-width: 200px;
+  height: auto;
+}
+
+div#links {
+    margin-top: 50px;
+}
+
+span.contact-row {
+  padding-left: 15px;
+  line-height: 36px;
+}
+
+div.social-icons {
+  margin-top: 15px;
+}
+
+a.social-row i {
+  padding-right: 8px;
+}
+
+a.social-fab {
+  margin-left: 10px;
+}
+
+div#language-skills {
+  margin-top: 50px;
+}
+
+div.language-skill {
+  height: 35px;
+}
