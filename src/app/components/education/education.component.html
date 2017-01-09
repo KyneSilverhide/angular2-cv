@@ -1,0 +1,24 @@
+<md-card>
+  <md-card-header class="cv-card">
+    <i md-card-avatar class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i>
+    <md-card-title>Education</md-card-title>
+  </md-card-header>
+  <md-divider></md-divider>
+  <md-card-content layout="column">
+    <md-list>
+      <md-list-item *ngFor="let education of educations">
+        <i md-list-avatar class="fa fa-circle fa-lg" aria-hidden="true"></i>
+        <h4 md-line>{{education.startDate}} <span *ngIf="education.endDate">à</span> {{education.endDate}}</h4>
+        <h4 md-line><a href="{{education.schoolUrl}}" target="_blank">{{education.school}}</a> : {{education.cursus}}</h4>
+        <p *ngFor="let project of education.projects" md-line class="description">
+          <span *ngIf="!project.url">
+            <strong>{{project.type}}</strong> : {{project.title}}
+          </span>
+          <span *ngIf="project.url">
+            <strong>{{project.type}}</strong> : <a href="{{project.url}}" target="_blank">{{project.title}}</a>
+          </span>
+        </p>
+      </md-list-item>
+    </md-list>
+  </md-card-content>
+</md-card>
