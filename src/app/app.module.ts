@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
 
 import { JoinPipe } from './components/pipes/join.pipe';
 
@@ -18,7 +19,8 @@ import { JoinPipe } from './components/pipes/join.pipe';
     JoinPipe,
     ProfileComponent,
     NavbarComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

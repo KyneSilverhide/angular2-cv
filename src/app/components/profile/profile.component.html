@@ -23,18 +23,18 @@
         </p>
       </div>
       <div id="links" layout="column" layout-padding flex-lg="50" flex="100">
-        <span class="contact-row"><i class="fa fa-birthday-cake fa-lg" aria-hidden="true"></i>&nbsp;25/03/1987</span>
-        <span class="contact-row"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>&nbsp;aurelien.lansmanne@gmail.com</span>
-        <span class="contact-row"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>&nbsp;151, rue Joseph Wauters 7390 Quaregnon</span>
-        <span class="contact-row"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>&nbsp;(+32) 498231354</span>
+        <span class="contact-row"><i class="fa fa-birthday-cake fa-lg fa-fw" aria-hidden="true"></i>&nbsp;25/03/1987</span>
+        <span class="contact-row"><i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>&nbsp;aurelien.lansmanne@gmail.com</span>
+        <span class="contact-row"><i class="fa fa-map-marker fa-lg fa-fw" aria-hidden="true"></i>&nbsp;151, rue Joseph Wauters 7390 Quaregnon</span>
+        <span class="contact-row"><i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>&nbsp;(+32) 498231354</span>
 
         <div layout-sm="row" layout-gt-sm="column" class="social-icons">
           <span *ngFor='let socialLink of socialLinks' class="social-row">
             <a hide-gt-sm md-mini-fab class="social-fab" color="accent" href="{{socialLink.url}}" mdTooltip="{{socialLink.name}}">
-              <i class="fa {{socialLink.icon}} fa-lg" aria-hidden="true"></i>
+              <i class="fa {{socialLink.icon}} fa-lg fa-fw" aria-hidden="true"></i>
             </a>
             <a hide-sm hide-xs md-button class="social-row">
-              <i class="fa {{socialLink.icon}} fa-lg" aria-hidden="true"></i>&nbsp;{{socialLink.name}}
+              <i class="fa {{socialLink.icon}} fa-lg fa-fw" aria-hidden="true"></i>&nbsp;{{socialLink.name}}
             </a>
           </span>
         </div>
