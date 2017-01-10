@@ -1,0 +1,14 @@
+div.skill-row {
+  height: 40px;
+}
+
+md-progress-bar {
+  height: 8px;
+  margin-bottom: 10px;
+  padding-top: 4px;
+}
+
+.skill-category h1 {
+  font-size: 1.7em;
+  font-weight: initial;
+}

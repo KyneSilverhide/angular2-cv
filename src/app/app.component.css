@@ -5,3 +5,8 @@ md-card {
 md-card-title {
   font-size: 1.15em;
 }
+
+.cv-card {
+  margin: 0;
+  padding: 0;
+}

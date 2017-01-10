@@ -10,6 +10,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
+import { SkillComponent } from './components/skills/skills.component';
 
 import { JoinPipe } from './components/pipes/join.pipe';
 
@@ -20,7 +21,8 @@ import { JoinPipe } from './components/pipes/join.pipe';
     ProfileComponent,
     NavbarComponent,
     ExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

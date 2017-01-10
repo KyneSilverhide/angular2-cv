@@ -39,3 +39,8 @@ div#language-skills {
 div.language-skill {
   height: 35px;
 }
+
+md-progress-bar {
+  height: 8px;
+  padding: 2px;
+}

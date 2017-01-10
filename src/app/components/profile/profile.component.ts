@@ -6,7 +6,7 @@ class SocialLink {
   icon:string;
 }
 
-class Skill {
+class Language {
   name: string;
   percentage: number;
   comment: string;
@@ -37,7 +37,7 @@ export class ProfileComponent {
     }
   ];
 
-  skills: Skill[] = [
+  languages: Language[] = [
     {
       name: "Français",
       percentage: 100,

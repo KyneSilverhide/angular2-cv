@@ -1,5 +1,5 @@
 <md-card>
-  <md-card-header class="cv-card">
+  <md-card-header>
     <md-card-title>
       <span class="name">Aurélien Lansmanne</span>
     </md-card-title>
@@ -40,11 +40,11 @@
         </div>
 
         <div id="language-skills" layout-padding>
-          <div *ngFor='let skill of skills' class="language-skill">
+          <div *ngFor='let language of languages' class="language-skill">
             <div>
-              <span><strong>{{skill.name}}</strong> : </span>
-              <span class="skill-comment">{{skill.comment}}</span>
-              <md-progress-bar mode="determinate" [value]="skill.percentage"></md-progress-bar>
+              <span><strong>{{language.name}}</strong> : </span>
+              <span class="skill-comment">{{language.comment}}</span>
+              <md-progress-bar mode="determinate" [value]="language.percentage"></md-progress-bar>
             </div>
             <div>
             </div>
