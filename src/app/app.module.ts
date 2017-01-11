@@ -11,18 +11,22 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { SkillComponent } from './components/skills/skills.component';
+import { HobbyComponent } from './components/hobbies/hobbies.component';
 
 import { JoinPipe } from './components/pipes/join.pipe';
+import { OrderByNamePipe } from './components/pipes/orderbyname.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     JoinPipe,
+    OrderByNamePipe,
     ProfileComponent,
     NavbarComponent,
     ExperienceComponent,
     EducationComponent,
-    SkillComponent
+    SkillComponent,
+    HobbyComponent
   ],
   imports: [
     BrowserModule,

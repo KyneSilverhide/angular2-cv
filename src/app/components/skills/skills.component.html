@@ -7,11 +7,11 @@
   <md-card-content layout="row" layout-wrap>
     <div *ngFor='let category of categories' class="skill-category" flex="50" flex-xs="100" layout-padding>
       <h1>{{category.name}}</h1>
-      <div *ngFor='let skill of category.skills' class="skill-row">
+      <div *ngFor='let skill of category.skills | orderByName' class="skill-row">
         <span class="skill-name"><strong>{{skill.name}}</strong> : </span>
         <md-progress-bar *ngIf="skill.percentage" mode="determinate" [value]="skill.percentage"></md-progress-bar>
       </div>
-      <span *ngIf="category.tools">
+      <span *ngIf="category.tools.length > 0">
           <strong>Autres : </strong>{{category.tools | join:', '}}
       </span>
     </div>

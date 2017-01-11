@@ -1,0 +1,13 @@
+<md-card>
+  <md-card-header class="cv-card">
+    <i md-card-avatar class="fa fa-cog fa-lg" aria-hidden="true"></i>
+    <md-card-title>Hobbies</md-card-title>
+  </md-card-header>
+  <md-divider></md-divider>
+  <md-card-content layout="row" layout-wrap>
+    <div *ngFor='let hobby of hobbies' flex layout="column" layout-align="center center" layout-padding>
+      <i class="fa {{hobby.icon}} fa-3x" aria-hidden="true"></i>
+      <span class="hobby-name">{{hobby.name}}</span>
+    </div>
+  </md-card-content>
+</md-card>
