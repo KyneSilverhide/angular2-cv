@@ -40,10 +40,10 @@ export class ProfileComponent {
       "Je suis passionné par l’informatique et les nouvelles technologies depuis mon enfance.",
       "\n",
       `Mes langages de prédilection sont le JAVA et le Javascript, mais diverses expériences personnelles m’ont conduit
-      à m’aventurer du côté du web responsive.et des architectures micro-services.,
+      à m’aventurer du côté du web responsive et des architectures micro-services.
       J’ai pu m’essayer à d’autres paradigmes de base de données, et au développement fullstack.`,
       "\n",
-      `J’ai l’esprit d’équipe, je suis rigoureux et toujours prêt à aider et à apprendre.,
+      `J’ai l’esprit d’équipe, je suis rigoureux et toujours prêt à aider et à apprendre.
       J’ai eu l’occasion d’endosser plusieurs rôles, du développement à la gestion de projet,
       afin de toujours mener à bien les tâches qui m’étaient confiées.`,
       "\n",
