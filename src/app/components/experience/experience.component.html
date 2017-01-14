@@ -7,8 +7,8 @@
   <md-card-content layout="column">
     <md-list>
       <md-list-item *ngFor="let experience of experiences">
-        <i md-list-avatar class="fa fa-circle fa-lg" aria-hidden="true"></i>
-        <h4 md-line>{{experience.startDate}} <span *ngIf="experience.endDate">à</span> {{experience.endDate}}</h4>
+        <i md-list-avatar class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>
+        <h4 md-line>{{experience.startDate}} <span *ngIf="experience.endDate"> - </span> {{experience.endDate}}</h4>
         <h4 md-line><a href="{{experience.companyUrl}}" target="_blank">{{experience.company}}</a> : {{experience.jobTitle}}</h4>
         <p md-line class="description">{{experience.description}}</p>
         <p md-line class="keywords">{{experience.keywords | join:', '}}</p>

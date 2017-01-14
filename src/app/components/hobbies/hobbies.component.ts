@@ -1,23 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Hobby } from '../services/data.model';
 
-export class Hobby {
-  name: string;
-  icon: string;
-}
+import { CVDataService } from '../services/cvdata.service';
 
 @Component({
   selector: 'cv-hobbies',
   templateUrl: './hobbies.component.html',
-  styleUrls: ['./hobbies.component.css', '../../app.component.css']
+  styleUrls: ['./hobbies.component.css', '../../app.component.css'],
+  providers: [CVDataService]
 })
-export class HobbyComponent {
+export class HobbyComponent implements OnInit {
 
-  hobbies: Hobby[] = [
-    { name: "After Effects", icon: "fa-file-video-o" },
-    { name: "Photoshop", icon: "fa-picture-o" },
-    { name: "Jeux vidéos", icon: "fa-gamepad" },
-    { name: "Musique", icon: "fa-headphones" },
-    { name: "Films", icon: "fa-film" },
-    { name: "Sci-Fi", icon: "fa-book" }
-  ];
+  hobbies: Hobby[];
+
+  constructor(private dataService: CVDataService) { }
+
+  ngOnInit() {
+    this.dataService.getHobbies().then(hobbies => this.hobbies = hobbies);
+  }
 }

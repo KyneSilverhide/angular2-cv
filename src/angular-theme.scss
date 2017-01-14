@@ -1,0 +1,10 @@
+@import '~@angular/material/core/theming/_all-theme';
+
+@include md-core();
+
+$cv-app-primary: md-palette($md-blue, 800, 700, 900);
+$cv-app-accent:  md-palette($md-pink, A200, A100, A400);
+$cv-app-warn:    md-palette($md-red);
+
+$cv-app-theme: md-light-theme($cv-app-primary, $cv-app-accent, $cv-app-warn);
+@include angular-material-theme($cv-app-theme);

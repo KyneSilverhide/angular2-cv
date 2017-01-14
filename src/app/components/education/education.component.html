@@ -7,8 +7,8 @@
   <md-card-content layout="column">
     <md-list>
       <md-list-item *ngFor="let education of educations">
-        <i md-list-avatar class="fa fa-circle fa-lg" aria-hidden="true"></i>
-        <h4 md-line>{{education.startDate}} <span *ngIf="education.endDate">à</span> {{education.endDate}}</h4>
+        <i md-list-avatar class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>
+        <h4 md-line>{{education.startDate}} <span *ngIf="education.endDate"> - </span> {{education.endDate}}</h4>
         <h4 md-line><a href="{{education.schoolUrl}}" target="_blank">{{education.school}}</a> : {{education.cursus}}</h4>
         <p *ngFor="let project of education.projects" md-line class="description">
           <span *ngIf="!project.url">
